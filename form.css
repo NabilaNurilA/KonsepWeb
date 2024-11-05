@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; 
+}
+
+#registration {
+    background-color: #f8bbd0;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#registration h2 {
+    color: #00796b; 
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin: 1em 0 0.5em;
+    color: #00796b;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #b2ebf2; 
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1em;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #00796b; /* Dark teal background for the button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #004d40; 
+}
+
+form label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #registration {
+        padding: 1.5em; 
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form input[type="tel"],
+    form select,
+    form button {
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 480px) {
+    #registration {
+        width: 90%; 
+    }
+
+    form button {
+        font-size: 1.1em;
+    }
+}
